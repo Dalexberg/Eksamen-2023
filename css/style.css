@@ -85,6 +85,8 @@ margin-top: 3rem;
 font-size: 2rem;
 text-align: center;
 font-weight:800;
+margin-left: 3rem;
+margin-right: 3rem;
 }
 
 .Headline p{
@@ -108,4 +110,87 @@ font-weight:800;
     padding: 1rem;
     position: absolute;
     margin-top: 25rem;
+}
+
+.Subheading{
+    margin-top: 5rem;
+    text-align: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.about_company{
+    background-color: #e6bd43;
+    padding-bottom: 5rem;
+    
+}
+
+.about_company img{
+    width: 100%;
+    padding: 3rem;
+}
+.about_company h3{
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.about_company p{
+    padding-left: 5rem;
+    padding-right: 5rem;
+    font-size: 1.1rem;
+    text-align: left;
+    margin-bottom: 3rem;
+}
+
+.moreabout{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    border: black solid 2px;
+    padding: 1rem;
+    margin-left: 5rem;
+}
+
+.servicesh3{
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 1.5rem;
+}
+.ourservices{
+    text-align: center;
+    margin-top: 5rem;
+    
+}
+.ourservices p{
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 3rem;
+}
+
+.newsletter{
+    background-color: #e9e4e4;
+     text-align: center;
+     padding: 1rem;
+}
+.newsletter h2{
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.email{
+    border: none;
+    padding: 0.5rem;
+}
+
+.signup{
+    border: none;
+    background-color: #e6bd43;
+    padding: 0.5rem;
+}
+
+footer{
+    background: #252525;
+    display: flex;
+    justify-content: center;
+    padding: 5rem;
 }
