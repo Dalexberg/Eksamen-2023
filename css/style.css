@@ -7,16 +7,22 @@ html {
 }
 
 body{
-font-family: Arial, Helvetica, sans-serif;
+    font-family: "Barlow", sans-serif;
 margin: 0;
 background-color: white;
 max-width: 100%;
+display: grid;
+grid-template-areas: "header"
+"main_content"
+"footer";
+grid-template-columns: 1fr;
 }
 
 header{
     display: flex;
     justify-content: center;
     align-items: center; 
+    grid-area: header;
 }
 
 header a img{
@@ -63,6 +69,7 @@ header a{
 }
 main{
     overflow-x: hidden;
+    grid-area: main_content;
 }
 
 .Headline{
@@ -70,13 +77,21 @@ main{
     flex-direction: column;
     align-items: center;
     position: relative;
+    overflow: hidden;
+    height: 500px;
 }
 
-.Headline img{
+.macbook{
     width: 200%;
     margin-top: 1rem; 
     overflow-x: hidden;
     
+}
+
+.mountains{
+    width: 100%;
+
+
 }
 
 .Headline h1{
@@ -125,7 +140,7 @@ margin-right: 3rem;
     
 }
 
-.about_company img{
+.placeholderimg{
     width: 100%;
     padding: 3rem;
 }
@@ -181,6 +196,9 @@ margin-right: 3rem;
     border: none;
     padding: 0.5rem;
 }
+.emailsignup{
+    display: none;
+}
 
 .signup{
     border: none;
@@ -193,4 +211,226 @@ footer{
     display: flex;
     justify-content: center;
     padding: 5rem;
+    grid-area: footer;
+}
+.scrolltop{
+    text-align: center;
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    width: 3rem;
+    height: 3rem;
+    background-color: #252525;
+    border-radius: 10%;
+    padding-top: 1rem;
+}
+
+@media (max-width: 1024px){
+    .mountains{
+        display: none;
+    }
+    #facebook{
+        display: none;
+    }
+    #instagram{
+        display: none;
+    }
+    #linkedin{
+        display: none;
+    }
+    footer p{
+        display: none;
+    }
+    
+}
+
+@media (min-width: 1025px) {
+.indexbody{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "main_content main_content main_content"
+    "footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr;
+}
+    .header{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        grid-area: header;
+        width: 100%;  
+    }
+
+    .header a:first-of-type{
+        margin-right: auto;
+    }
+
+    .header a{
+        font-size: 1.5rem;
+    }
+
+    main{
+        grid-area: main_content;
+    }
+    footer{
+        grid-area: footer;
+    }
+    .contact{
+        margin-top: 0;
+        margin-right: 1rem;
+    }
+    .contact:hover{
+        background-color: #252525;
+        font-weight: bold;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        color: #e6bd43;
+    }
+    .macbook{
+    display: none;
+    }
+    .Headline h1{
+        font-size: 4rem;
+    }
+
+    .Headline p{
+        font-size: 1.5rem;
+        margin-top: 12rem;
+        width: 50%;
+    }
+
+    .services{
+        font-size: 1.5rem;
+    }
+    .services:hover{
+        background-color: #252525;
+        color: #e6bd43;
+    }
+    .Subheading{
+        height: auto;
+        margin-left: 20rem;
+        margin-right: 20rem;
+    }
+    .Subheading h2{
+        font-size: 4rem;
+    
+    }
+    .Subheading p{
+        font-size: 1.5rem;
+        margin-bottom: 5rem;
+    }
+    .placeholderimg{
+        width: 100%;
+        grid-area: img;
+    }
+    .about_company{
+        display: grid;
+        grid-template-areas: 
+        "img text text"
+        "img text2 text2"
+        "img button nothing";
+     grid-template-columns: 1fr 1fr 1fr;
+    }
+    .about_company p{
+        grid-area: text2;
+        font-size: 1.5rem;
+     
+    }
+    .about_company h3{
+        grid-area: text;
+        margin-top: auto;
+        font-size: 3rem;
+
+    }
+        
+    .about_company a{
+        grid-area: button;
+        width: 50%;
+        text-align: center;
+        height: 35%;
+        font-size: 100%;
+        border: 5px solid #252525;
+    }
+    .about_company a:hover{
+        background-color: #252525;
+        color: #e6bd43;
+    }
+    .servicesh3{
+        font-size: 3rem;
+        margin-bottom: 6rem;
+    }
+    .symbols{
+        display: grid;
+        grid-template-areas: 
+        "symbol1 symbol2 symbol3 symbol4"
+        "branding1 branding2 branding3 branding4"
+        "filler1 filler2 filler3 filler4";
+    }
+    #symbol1{
+        grid-area: symbol1;
+    }
+    #symbol2{
+        grid-area: symbol2;
+    }
+    #symbol3{
+        grid-area: symbol3;
+    }
+    #symbol4{
+        grid-area: symbol4;
+    }
+   .branding1{
+    grid-area: branding1;
+   }
+   .branding2{
+    grid-area: branding2;
+}
+   .branding3{
+    grid-area: branding3;
+   }
+   .branding4{
+    grid-area: branding4;
+   }
+   .newsletter{
+    padding-bottom: 3rem;
+   }
+   .newsletter h2{
+    font-size: 3rem;
+   }
+
+.email{
+    font-size: 2rem;
+}
+.signup{
+    font-size: 2rem;
+}
+.signup:hover{
+    color: #e6bd43;
+    background-color: #252525;
+}
+footer{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;  
+    align-items: center;
+}
+footer p{
+    color: white;
+    margin-right: auto;
+}
+footer img{
+    margin-right: auto;
+}
+#facebook{
+    margin: 1rem;
+}
+#instagram{
+
+    margin: 1rem;
+}
+#linkedin{
+    margin: 1rem;
+}
+
+
 }
