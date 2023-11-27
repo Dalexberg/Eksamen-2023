@@ -7,7 +7,7 @@ html {
 }
 
 body{
-    font-family: "Barlow", sans-serif;
+font-family: "Barlow", sans-serif;
 margin: 0;
 background-color: white;
 max-width: 100%;
@@ -16,6 +16,7 @@ grid-template-areas: "header"
 "main_content"
 "footer";
 grid-template-columns: 1fr;
+max-width: 1600px;
 }
 
 header{
@@ -208,10 +209,17 @@ margin-right: 3rem;
 
 footer{
     background: #252525;
-    display: flex;
-    justify-content: center;
     padding: 5rem;
     grid-area: footer;
+    text-align: center;
+}
+footer p{
+    color: white;
+    margin-right: auto;
+    font-size: 1.5rem;
+}
+footer a{
+    margin: 1rem;
 }
 .scrolltop{
     text-align: center;
@@ -228,20 +236,7 @@ footer{
 @media (max-width: 1024px){
     .mountains{
         display: none;
-    }
-    #facebook{
-        display: none;
-    }
-    #instagram{
-        display: none;
-    }
-    #linkedin{
-        display: none;
-    }
-    footer p{
-        display: none;
-    }
-    
+    }   
 }
 
 @media (min-width: 1025px) {
@@ -347,7 +342,7 @@ footer{
         grid-area: button;
         width: 50%;
         text-align: center;
-        height: 35%;
+        height: 50%;
         font-size: 100%;
         border: 5px solid #252525;
     }
@@ -406,6 +401,7 @@ footer{
 .signup:hover{
     color: #e6bd43;
     background-color: #252525;
+    cursor: pointer;
 }
 footer{
     display:flex;
@@ -414,13 +410,7 @@ footer{
     width: 100%;  
     align-items: center;
 }
-footer p{
-    color: white;
-    margin-right: auto;
-}
-footer img{
-    margin-right: auto;
-}
+
 #facebook{
     margin: 1rem;
 }
@@ -431,6 +421,298 @@ footer img{
 #linkedin{
     margin: 1rem;
 }
+.productbody{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "main_content main_content main_content"
+    "footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.aboutbody{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "main_content main_content main_content"
+    "footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media (min-width: 500px){
+    footer{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;  
+        align-items: center;
+    }
+    }
+    footer img{
+        margin-right: auto;
+    }
+    #facebook{
+        margin: 1rem;
+    }
+    #instagram{
+    
+        margin: 1rem;
+    }
+    #linkedin{
+        margin: 1rem;
+    }
+    .x400{
+        transition: transform .2s;
+    }
+    .x400:hover{
+        transform: scale(1.1);
+    }
+
+    .showoff a:hover{
+        color: #e6bd43;
+        background-color: #252525;
+    }
+}
 
 
+
+/* Her begynner products.html */
+
+.Headline2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+    item
+}
+
+.macbook2{
+    width: 200%;
+    margin-top: 1rem; 
+    overflow-x: hidden;
+}
+
+.portfoliotitle{
+position: absolute;
+margin-top: 15rem;
+font-size: 2rem;
+text-align: center;
+font-weight:800;
+margin-left: 3rem;
+margin-right: 3rem;
+}
+
+.explore{
+    text-align: left;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.explore h2{
+    border-bottom: #e6bd43 solid 4px;
+    padding-bottom: 1rem;
+}
+.showoff{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+.showoff h2{
+    display: none;
+}
+.showoff a{
+    text-decoration: none;
+    color: #252525;
+    border: 2px solid #252525;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+
+.brandingsec{
+    margin-left: 3rem;
+    margin-right: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.sectionhead{
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.sectionhead h2{
+    border-bottom: #e6bd43 solid 4px;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.x400{
+    margin-right: 1rem;
+    height: auto;
+    max-width: 100%;
+}
+
+.brandingsec article h3{
+    font-size: 1.5rem;
+}
+.brandingsec h2{
+    display: none;
+}
+
+/* Her begynner about siden*/
+
+.Headline3 article{
+    background-color: white;
+    opacity: 0.8;
+    position: absolute;
+    margin-right: 3rem;
+    margin-left: 3rem;
+    text-align: left;
+    top: 30rem;
+    padding-bottom: 2rem;
+    max-width: 1100px;
+}
+.Headline3 article p{
+    margin-top: 2rem;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+}
+
+.Headline3 h2{
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+.macbook3{
+    margin-top: 2rem;
+    height: 1000px;
+}
+
+.Headline3 article a{
+    background-color: #e6bd43;
+    color: #252525;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+}
+
+.ourclients{
+    text-align: center;
+    background-color: #e6bd43;
+    padding-bottom: 2rem;
+}
+.ourclients h2{
+    padding-top: 2rem;
+}
+
+.ourclients img{
+    margin: 0.5rem;
+}
+.contactus{
+    text-align: center;
+    background-color: #e9e7e7;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+}
+
+.contactus article{
+    text-align: left;
+    margin-left: 3rem;
+}
+.contactus h2{
+    margin-top: 0;
+}
+.contactus article h3{
+    font-size: 1.5rem;
+    margin-top: 3rem;
+}
+
+.label{
+    display:block;
+    margin-bottom: 0.5rem;
+}
+#name{
+    border: none;
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.inputboxes{
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+#subject{
+    border: none;
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#message{
+    border: none;
+    width: 100%;
+    padding-top: 0.5rem;
+    padding-bottom: 10rem;
+    margin-bottom: 0.5rem;
+}
+
+.sendmes{
+    border: none;
+    background-color: #e6bd43;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.continformation{
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.continformation h2{
+    margin-top: 7rem;
+}
+
+.continformation p{
+    font-size: 1.3rem;
+}
+.headingyep{
+    display: none;
+}
+.label2{
+    display: inline-block;
+}
+
+.address span{
+font-size: 1.3rem;
+margin-left: 1rem;
+}
+#address{
+    margin-bottom: 2rem;
+}
+#phone{
+    margin-bottom: 2rem;
+}
+#acompmail{
+    margin-bottom: 2rem;
+}
+.phone span{
+    font-size: 1.3rem;
+    margin-left: 1rem;
+}
+
+.compemail span{
+    font-size: 1.3rem;
+    margin-left: 1rem;
+}
+
+.googlemap{
+    width: 100%;
 }

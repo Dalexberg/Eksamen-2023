@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 <head>
 
 <meta charset="UTF-8">
@@ -7,64 +7,135 @@
 <meta name="description" content="frontpage for an undisclosed company for an exam.">
 <meta name="keywords" content="branding, design, development, support, services,">
 <meta name="author" content="Daniel Alexander N. Berg">
+<meta property="og:title" content="Exam aboutpage">
+<meta property="og:type" content="aboutpage">
 
 <link rel="stylesheet" href="css/style.css" type="text/css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow">
+<link rel="icon" type="image/x-icon" href="ressurser/logo1.png">
 
 <title>Frontpage</title>
+<script src="https://kit.fontawesome.com/693f4a29b0.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="aboutbody">
+    <a aria-label="Return to top of page" href="#top" class="scrolltop"><i class="fa-solid fa-arrow-up fa-2xl" style="color: #ffffff;"></i></a>
+   
+
     <header>
         <nav class="header">
             <a href="index.html" class="Logo">
-                <img src="ressurser\logo1.png">
+                <img src="ressurser/logo1.png" alt="Company Logo">
             </a>
             
             <a href="Index.html" class="home">Home</a>
             <a href="Products.html" class="portfolio">Portfolio</a>
             <a href="About.html" class="about">About</a>
-            <a href="#contakt" class="contact">Contact</a>
-
-
-
-
-
-
+            <a href="about.html#contact" class="contact">Contact</a>
         </nav>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </header>
+ 
+  <main>
+    <section itemscope itemtype="https://schema.org/Article" class="Headline3">
+        <h3 class="headingyep">this is so html validator doesn't give me a warning YEP</h3>
+        <img itemprop="image" class="macbook3" src="ressurser/negative-space-macbook-iphone-notepad-black-white-Custom-1.jpg" alt="black and white image of a macbook and a notepad">
+        <!-- Kilde til bildet over: https://negativespace.co/macbook-iphone-notepad-black-white/ -->
+        <article>
+            <p>Company name</p>
+            <h2>About our company</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <a href="#Contact">Get in touch with us</a>
+        </article>
+    </section>
 
+    <article class="ourservices" id="services" title="Services">
+        <h2 class="servicesh3">Our services</h2>
+        <section class="symbols">
+        <i id="symbol1" class="fa-solid fa-users fa-xl" style="color: #000000;"></i>
+        <h2 class="branding1">Branding</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
 
+        <i id="symbol2" class="fa-solid fa-cloud-arrow-up fa-2xl" style="color: #000000;"></i>
+        <h2 class="branding2">Branding</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
 
+        <i id="symbol3" class="fa-solid fa-code fa-2xl" style="color: #000000;"></i>
+        <h2 class="branding3">Branding</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
 
+        <i id="symbol4" class="fa-solid fa-wifi fa-2xl" style="color: #000000;"></i>
+        <h2 class="branding4">Branding</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        </section>
+</article>
 
+<section>
+    <h3 class="headingyep">this is so html validator doesn't give me a warning because YEP</h3>
+    <article class="ourclients">
+        <h2>Some of our clients</h2>
+        <img src="ressurser/logo1.png" alt="Company logo">
+        <img src="ressurser/logo2.png" alt="Company logo two">
+        <img src="ressurser/logo3.png" alt="Company logo three">
+   </article>
+</section>
 
+<section id="contact" class="contactus">
+    <h2>Contact us</h2>
 
+    <article class="inputboxes">
+        <h3>Send us a message</h3>
+<label class="label" for="name">Name</label>
+<input aria-label="Enter your name here" type="text" id="name" placeholder="Ola Nordmann..">
 
+<label class="label" for="subject">Subject</label>
+<input aria-label="Enter message subject here" type="text" id="subject" placeholder="Branding..">
 
+<label class="label" for="message">Message</label>
+<input aria-label="Enter your message here" type="text" id="message">
 
+<button aria-label="Send message" type="submit" class="sendmes"> Send message</button>
+    </article>
 
+    <article class="continformation">
+        <h2>Contact information</h2>
+        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint</p>
+    </article>
 
+    <article class="address">
+        <h3 class="headingyep">Company address</h3>
+        <i id="address" class="fa-solid fa-location-pin fa-2xl" style="color: #191919;"></i>
+        <span>B R A Veien 4, 1757 Halden</span>
+    </article>
 
+    <article class="phone">
+        <h3 class="headingyep">Phone number</h3>
+        <i id="phone" class="fa-solid fa-phone fa-2xl" style="color: #191919;"></i>
+        <span>69 60 80 00</span>
+    </article>
 
+    <article class="compemail">
+        <h3 class="headingyep">Company Email</h3>
+        <i id="compmail" class="fa-solid fa-envelope fa-2xl" style="color: #191919;"></i>
+        <span> <a href="mailto:postmottak@hiof.no">postmottak@hiof.no</a></span>
+    </article>
+    </section>
 
+    <section class="map">
 
+        <iframe class="googlemap" width="600" height="450" style="border:0" loading="lazy" allowfullscreen
+src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJbyRE0_ASREYRsVOymZzxR04&key=AIzaSyAeV_hhoiBZFCu2XbN2Ebpo1As-UnycyQ0"></iframe>
+    </section>
+</main>
 
-
+<footer>
+    <img src="ressurser/logo1.png" alt="Company Logo">
+    <p>Companyrights Companyname 2023</p>
+    <a href="https://www.facebook.com" ><i id="facebook" class="fa-brands fa-square-facebook fa-2xl" style="color: #ffffff;"></i></a>
+    
+    <a href="https://www.instagram.com"><i id="instagram" class="fa-brands fa-square-instagram fa-2xl" style="color: #ffffff;"></i></a>
+    
+    <a href="https://www.linkedin.com"><i id="linkedin" class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;"></i></a>
+</footer>
 
 
 

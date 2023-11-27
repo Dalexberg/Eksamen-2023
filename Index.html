@@ -6,17 +6,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="frontpage for an undisclosed company for an exam.">
 <meta name="keywords" content="branding, design, development, support, services,">
-<meta name="author" content="Daniel Alexander N. Berg">
+<meta name="author" content="Daniel Alexander N. Berg"> 
+<meta property="og:title" content="Exam frontpage!">
+<meta property="og:type" content="frontpage">
 
 <link rel="stylesheet" href="css/style.css" type="text/css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow">
+
 
 <title>Frontpage</title>
 <script src="https://kit.fontawesome.com/693f4a29b0.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="indexbody">
-    <a href="#top" class="scrolltop"><i class="fa-solid fa-arrow-up fa-2xl" style="color: #ffffff;"></i></a>
+    <a aria-label="Return to top of page" href="#top" class="scrolltop"><i class="fa-solid fa-arrow-up fa-2xl" style="color: #ffffff;"></i></a>
 
     <header>
         <nav class="header">
@@ -27,13 +30,13 @@
             <a href="Index.html" class="home">Home</a>
             <a href="Products.html" class="portfolio">Portfolio</a>
             <a href="About.html" class="about">About</a>
-            <a href="#contact" class="contact">Contact</a>
+            <a href="about.html#contact" class="contact">Contact</a>
         </nav>
     </header>
 
     <main>
-        <section class="Headline">
-            <img class="macbook" src="ressurser/negative-space-macbook-iphone-notepad-black-white-Custom-1.jpg" alt="black and white image of a macbook and a notepad">
+        <section itemscope itemtype="https://schema.org/Article" class="Headline">
+            <img itemprop="image" class="macbook" src="ressurser/negative-space-macbook-iphone-notepad-black-white-Custom-1.jpg" alt="black and white image of a macbook and a notepad">
             <!-- Kilde til bildet over: https://negativespace.co/macbook-iphone-notepad-black-white/ -->
 
             <video class="mountains"  autoplay loop muted>
@@ -41,27 +44,27 @@
             </video>
 
 
-            <h1>Compelling headline</h1>
-            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum 
+            <h1 itemprop="articleSection">Compelling headline</h1>
+            <p itemprop="articleBody" >At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum 
                deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupdiditate
                non provident
             </p>
             <a href="#services" class="services">Read more about our services</a>
         </section>
 
-        <section class="Subheading">
-            <h2>Engaging subheading. What can you help your visitors with</h2>
-            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum 
+        <section  itemscope itemtype="https://schema.org/Article" class="Subheading">
+            <h2 itemprop="articleSection">Engaging subheading. What can you help your visitors with</h2>
+            <p itemprop="articleBody">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum 
                 deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupdiditate
                 non provident
              </p>
          </section>
 
-         <section class="about_company">
-            <img class="placeholderimg" src="ressurser/400.jpg" alt="blank image with the text 400 x 400">
+         <section itemscope itemtype="https://schema.org/Article" class="about_company">
+            <img itemprop="image" class="placeholderimg" src="ressurser/400.jpg" alt="blank image with the text 400 x 400">
 
-            <h3>About Our Company</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur </p>
+            <h3 itemprop="articleSection">About Our Company</h3>
+            <p itemprop="articleBody" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur </p>
             <a href="about.html" class="moreabout">Read more about us</a>
          </section>
     
@@ -90,8 +93,8 @@
             <h2>Sign up for our newsletter</h2>
             <article>
                 <h2 class="emailsignup">Email Signup</h2>
-            <input type="text" class="email" placeholder="nora@epost.no">
-            <button type="submit" class="signup"> Sign me up!</button>
+            <input aria-label="Enter your email here" type="text" class="email" placeholder="nora@epost.no">
+            <button aria-label="Email sign up" type="submit" class="signup"> Sign me up!</button>
             </article>
 
          </section>
@@ -101,18 +104,12 @@
      <footer>
         <img src="ressurser/logo1.png" alt="Company Logo">
         <p>Companyrights Companyname 2023</p>
-        <a href="https://www.facebook.com" class="href"><i id="facebook" class="fa-brands fa-square-facebook fa-2xl" style="color: #ffffff;"></i></a>
+        <a href="https://www.facebook.com" ><i id="facebook" class="fa-brands fa-square-facebook fa-2xl" style="color: #ffffff;"></i></a>
         
         <a href="https://www.instagram.com"><i id="instagram" class="fa-brands fa-square-instagram fa-2xl" style="color: #ffffff;"></i></a>
         
         <a href="https://www.linkedin.com"><i id="linkedin" class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;"></i></a>
-        
-
-
-
-
-
-     </footer>
+    </footer>
 
 
 
