@@ -237,6 +237,48 @@ footer a{
     .mountains{
         display: none;
     }   
+    #name{
+        border: none;
+        width: 100%;
+        padding: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+    
+#message{
+    border: none;
+    width: 100%;
+    padding-top: 0.5rem;
+    padding-bottom: 10rem;
+    margin-bottom: 0.5rem;
+}
+    
+#subject{
+    border: none;
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.contactus{
+    text-align: center;
+    background-color: #e9e7e7;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    display: block;
+}
+.macbook3{
+    height: 1000px;
+}
+.Headline3 article{
+    background-color: white;
+    opacity: 0.8;
+    position: absolute;
+    margin-right: 3rem;
+    margin-left: 3rem;
+    text-align: left;
+    top: 30rem;
+    padding-bottom: 2rem;
+    max-width: 1100px;
+}
 }
 
 @media (min-width: 1025px) {
@@ -438,6 +480,75 @@ footer{
     "footer footer footer";
     grid-template-columns: 1fr 1fr 1fr;
 }
+.Headline3 a:hover{
+    color: #e6bd43;
+    background-color: #252525;
+}
+.sendmes:hover{
+    color: #e6bd43;
+    background-color: #252525;
+    cursor: pointer;
+}
+.inputboxes{
+    width:45%
+    
+}
+.contcont{
+    width: 40%;
+}
+#name{
+    border: none;
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#subject{
+    border: none;
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.sendmes{
+    display: block;
+}
+
+#message{
+    border: none;
+    width: 100%;
+    padding-top: 0.5rem;
+    padding-bottom: 10rem;
+    margin-bottom: 0.5rem;
+}
+.contactus{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.contactus{
+    text-align: center;
+    background-color: #e9e7e7;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.Headline3 article{
+    background-color: white;
+    opacity: 0.8;
+    position: absolute;
+    margin-right: 3rem;
+    margin-left: 25rem;
+    text-align: left;
+    top: 30rem;
+    padding-bottom: 2rem;
+    max-width: 1100px;
+}
+
+.macbook3{
+    height: 800px;
+}
+}
 
 @media (min-width: 500px){
     footer{
@@ -472,7 +583,6 @@ footer{
         color: #e6bd43;
         background-color: #252525;
     }
-}
 
 
 
@@ -567,17 +677,7 @@ margin-right: 3rem;
 
 /* Her begynner about siden*/
 
-.Headline3 article{
-    background-color: white;
-    opacity: 0.8;
-    position: absolute;
-    margin-right: 3rem;
-    margin-left: 3rem;
-    text-align: left;
-    top: 30rem;
-    padding-bottom: 2rem;
-    max-width: 1100px;
-}
+
 .Headline3 article p{
     margin-top: 2rem;
     margin-left: 1rem;
@@ -591,7 +691,7 @@ margin-right: 3rem;
 
 .macbook3{
     margin-top: 2rem;
-    height: 1000px;
+    width: 100%;
 }
 
 .Headline3 article a{
@@ -615,12 +715,7 @@ margin-right: 3rem;
 .ourclients img{
     margin: 0.5rem;
 }
-.contactus{
-    text-align: center;
-    background-color: #e9e7e7;
-    padding-top: 2rem;
-    padding-bottom: 5rem;
-}
+
 
 .contactus article{
     text-align: left;
@@ -638,30 +733,10 @@ margin-right: 3rem;
     display:block;
     margin-bottom: 0.5rem;
 }
-#name{
-    border: none;
-    width: 100%;
-    padding: 0.5rem;
-    margin-bottom: 0.5rem;
-}
+
 .inputboxes{
     margin-left: 3rem;
     margin-right: 3rem;
-}
-
-#subject{
-    border: none;
-    width: 100%;
-    padding: 0.5rem;
-    margin-bottom: 0.5rem;
-}
-
-#message{
-    border: none;
-    width: 100%;
-    padding-top: 0.5rem;
-    padding-bottom: 10rem;
-    margin-bottom: 0.5rem;
 }
 
 .sendmes{
@@ -715,4 +790,26 @@ margin-left: 1rem;
 
 .googlemap{
     width: 100%;
+}
+
+.indexbody{
+    margin: auto;
+    max-width: 1600px;
+}
+.productbody{
+    margin: auto;
+    max-width: 1600px;
+}
+.aboutbody{
+    margin: auto;
+    max-width: 1600px;
+}
+.contacthead{
+    background-color: #e9e7e7;
+    margin: 0;
+    text-align: center;
+    padding-top: 2rem;
+}
+.contacthead h2{
+    margin: 0;
 }
